@@ -63,14 +63,6 @@ impl Builder {
 
         //  Check system files
         ensure!(
-            root.join("arm9_overlay.bin").is_file(),
-            BuildError::MissingFileError("arm9_overlay.bin")
-        );
-        ensure!(
-            root.join("arm7_overlay.bin").is_file(),
-            BuildError::MissingFileError("arm7_overlay.bin")
-        );
-        ensure!(
             root.join("arm9.bin").is_file(),
             BuildError::MissingFileError("arm9.bin")
         );
